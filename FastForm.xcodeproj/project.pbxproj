@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A44EF6E17F341B2000BBCF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A44EF6D17F341B2000BBCF8 /* Foundation.framework */; };
+		3A44EF7017F341B2000BBCF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A44EF6F17F341B2000BBCF8 /* CoreGraphics.framework */; };
+		3A44EF7217F341B2000BBCF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A44EF7117F341B2000BBCF8 /* UIKit.framework */; };
+		3A44EF7817F341B2000BBCF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A44EF7617F341B2000BBCF8 /* InfoPlist.strings */; };
+		3A44EF7A17F341B3000BBCF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44EF7917F341B2000BBCF8 /* main.m */; };
+		3A44EF7E17F341B3000BBCF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44EF7D17F341B3000BBCF8 /* AppDelegate.m */; };
+		3A44EF8017F341B3000BBCF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A44EF7F17F341B3000BBCF8 /* Images.xcassets */; };
+		3A44EF8717F341B3000BBCF8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A44EF8617F341B3000BBCF8 /* XCTest.framework */; };
+		3A44EF8817F341B3000BBCF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A44EF6D17F341B2000BBCF8 /* Foundation.framework */; };
+		3A44EF8917F341B3000BBCF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A44EF7117F341B2000BBCF8 /* UIKit.framework */; };
+		3A44EF9117F341B3000BBCF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A44EF8F17F341B3000BBCF8 /* InfoPlist.strings */; };
+		3A44EF9317F341B3000BBCF8 /* FastFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44EF9217F341B3000BBCF8 /* FastFormTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A44EF8A17F341B3000BBCF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A44EF6217F341B2000BBCF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A44EF6917F341B2000BBCF8;
+			remoteInfo = FastForm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A44EF6A17F341B2000BBCF8 /* FastForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A44EF6D17F341B2000BBCF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A44EF6F17F341B2000BBCF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A44EF7117F341B2000BBCF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3A44EF7517F341B2000BBCF8 /* FastForm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastForm-Info.plist"; sourceTree = "<group>"; };
+		3A44EF7717F341B2000BBCF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A44EF7917F341B2000BBCF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A44EF7B17F341B3000BBCF8 /* FastForm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FastForm-Prefix.pch"; sourceTree = "<group>"; };
+		3A44EF7C17F341B3000BBCF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A44EF7D17F341B3000BBCF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A44EF7F17F341B3000BBCF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A44EF8517F341B3000BBCF8 /* FastFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A44EF8617F341B3000BBCF8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3A44EF8E17F341B3000BBCF8 /* FastFormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastFormTests-Info.plist"; sourceTree = "<group>"; };
+		3A44EF9017F341B3000BBCF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A44EF9217F341B3000BBCF8 /* FastFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastFormTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A44EF6717F341B2000BBCF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A44EF7017F341B2000BBCF8 /* CoreGraphics.framework in Frameworks */,
+				3A44EF7217F341B2000BBCF8 /* UIKit.framework in Frameworks */,
+				3A44EF6E17F341B2000BBCF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A44EF8217F341B3000BBCF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A44EF8717F341B3000BBCF8 /* XCTest.framework in Frameworks */,
+				3A44EF8917F341B3000BBCF8 /* UIKit.framework in Frameworks */,
+				3A44EF8817F341B3000BBCF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A44EF6117F341B2000BBCF8 = {
+			isa = PBXGroup;
+			children = (
+				3A44EF7317F341B2000BBCF8 /* FastForm */,
+				3A44EF8C17F341B3000BBCF8 /* FastFormTests */,
+				3A44EF6C17F341B2000BBCF8 /* Frameworks */,
+				3A44EF6B17F341B2000BBCF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A44EF6B17F341B2000BBCF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A44EF6A17F341B2000BBCF8 /* FastForm.app */,
+				3A44EF8517F341B3000BBCF8 /* FastFormTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A44EF6C17F341B2000BBCF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A44EF6D17F341B2000BBCF8 /* Foundation.framework */,
+				3A44EF6F17F341B2000BBCF8 /* CoreGraphics.framework */,
+				3A44EF7117F341B2000BBCF8 /* UIKit.framework */,
+				3A44EF8617F341B3000BBCF8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A44EF7317F341B2000BBCF8 /* FastForm */ = {
+			isa = PBXGroup;
+			children = (
+				3A44EF7C17F341B3000BBCF8 /* AppDelegate.h */,
+				3A44EF7D17F341B3000BBCF8 /* AppDelegate.m */,
+				3A44EF7F17F341B3000BBCF8 /* Images.xcassets */,
+				3A44EF7417F341B2000BBCF8 /* Supporting Files */,
+			);
+			path = FastForm;
+			sourceTree = "<group>";
+		};
+		3A44EF7417F341B2000BBCF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A44EF7517F341B2000BBCF8 /* FastForm-Info.plist */,
+				3A44EF7617F341B2000BBCF8 /* InfoPlist.strings */,
+				3A44EF7917F341B2000BBCF8 /* main.m */,
+				3A44EF7B17F341B3000BBCF8 /* FastForm-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A44EF8C17F341B3000BBCF8 /* FastFormTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A44EF9217F341B3000BBCF8 /* FastFormTests.m */,
+				3A44EF8D17F341B3000BBCF8 /* Supporting Files */,
+			);
+			path = FastFormTests;
+			sourceTree = "<group>";
+		};
+		3A44EF8D17F341B3000BBCF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A44EF8E17F341B3000BBCF8 /* FastFormTests-Info.plist */,
+				3A44EF8F17F341B3000BBCF8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A44EF6917F341B2000BBCF8 /* FastForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A44EF9617F341B3000BBCF8 /* Build configuration list for PBXNativeTarget "FastForm" */;
+			buildPhases = (
+				3A44EF6617F341B2000BBCF8 /* Sources */,
+				3A44EF6717F341B2000BBCF8 /* Frameworks */,
+				3A44EF6817F341B2000BBCF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastForm;
+			productName = FastForm;
+			productReference = 3A44EF6A17F341B2000BBCF8 /* FastForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A44EF8417F341B3000BBCF8 /* FastFormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A44EF9917F341B3000BBCF8 /* Build configuration list for PBXNativeTarget "FastFormTests" */;
+			buildPhases = (
+				3A44EF8117F341B3000BBCF8 /* Sources */,
+				3A44EF8217F341B3000BBCF8 /* Frameworks */,
+				3A44EF8317F341B3000BBCF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A44EF8B17F341B3000BBCF8 /* PBXTargetDependency */,
+			);
+			name = FastFormTests;
+			productName = FastFormTests;
+			productReference = 3A44EF8517F341B3000BBCF8 /* FastFormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A44EF6217F341B2000BBCF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Bravo Inovação";
+				TargetAttributes = {
+					3A44EF8417F341B3000BBCF8 = {
+						TestTargetID = 3A44EF6917F341B2000BBCF8;
+					};
+				};
+			};
+			buildConfigurationList = 3A44EF6517F341B2000BBCF8 /* Build configuration list for PBXProject "FastForm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3A44EF6117F341B2000BBCF8;
+			productRefGroup = 3A44EF6B17F341B2000BBCF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A44EF6917F341B2000BBCF8 /* FastForm */,
+				3A44EF8417F341B3000BBCF8 /* FastFormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A44EF6817F341B2000BBCF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A44EF7817F341B2000BBCF8 /* InfoPlist.strings in Resources */,
+				3A44EF8017F341B3000BBCF8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A44EF8317F341B3000BBCF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A44EF9117F341B3000BBCF8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A44EF6617F341B2000BBCF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A44EF7E17F341B3000BBCF8 /* AppDelegate.m in Sources */,
+				3A44EF7A17F341B3000BBCF8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A44EF8117F341B3000BBCF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A44EF9317F341B3000BBCF8 /* FastFormTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A44EF8B17F341B3000BBCF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A44EF6917F341B2000BBCF8 /* FastForm */;
+			targetProxy = 3A44EF8A17F341B3000BBCF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A44EF7617F341B2000BBCF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A44EF7717F341B2000BBCF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3A44EF8F17F341B3000BBCF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A44EF9017F341B3000BBCF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A44EF9417F341B3000BBCF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A44EF9517F341B3000BBCF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A44EF9717F341B3000BBCF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastForm/FastForm-Prefix.pch";
+				INFOPLIST_FILE = "FastForm/FastForm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3A44EF9817F341B3000BBCF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastForm/FastForm-Prefix.pch";
+				INFOPLIST_FILE = "FastForm/FastForm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3A44EF9A17F341B3000BBCF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FastForm.app/FastForm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastForm/FastForm-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FastFormTests/FastFormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3A44EF9B17F341B3000BBCF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FastForm.app/FastForm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastForm/FastForm-Prefix.pch";
+				INFOPLIST_FILE = "FastFormTests/FastFormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A44EF6517F341B2000BBCF8 /* Build configuration list for PBXProject "FastForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A44EF9417F341B3000BBCF8 /* Debug */,
+				3A44EF9517F341B3000BBCF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A44EF9617F341B3000BBCF8 /* Build configuration list for PBXNativeTarget "FastForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A44EF9717F341B3000BBCF8 /* Debug */,
+				3A44EF9817F341B3000BBCF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A44EF9917F341B3000BBCF8 /* Build configuration list for PBXNativeTarget "FastFormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A44EF9A17F341B3000BBCF8 /* Debug */,
+				3A44EF9B17F341B3000BBCF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A44EF6217F341B2000BBCF8 /* Project object */;
+}
