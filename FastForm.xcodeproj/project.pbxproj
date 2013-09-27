@@ -19,6 +19,11 @@
 		3A44EF8917F341B3000BBCF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A44EF7117F341B2000BBCF8 /* UIKit.framework */; };
 		3A44EF9117F341B3000BBCF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A44EF8F17F341B3000BBCF8 /* InfoPlist.strings */; };
 		3A44EF9317F341B3000BBCF8 /* FastFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44EF9217F341B3000BBCF8 /* FastFormTests.m */; };
+		3A44EF9F17F341E8000BBCF8 /* FFTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44EF9E17F341E8000BBCF8 /* FFTableController.m */; };
+		3A44EFA317F3428B000BBCF8 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44EFA217F3428B000BBCF8 /* LoginController.m */; };
+		3A44EFAA17F343AA000BBCF8 /* FFField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44EFA917F343AA000BBCF8 /* FFField.m */; };
+		3A44EFAD17F343DC000BBCF8 /* FFCharField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44EFAC17F343DC000BBCF8 /* FFCharField.m */; };
+		3A44EFAF17F34411000BBCF8 /* FFCharField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A44EFAE17F34411000BBCF8 /* FFCharField.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,15 @@
 		3A44EF8E17F341B3000BBCF8 /* FastFormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastFormTests-Info.plist"; sourceTree = "<group>"; };
 		3A44EF9017F341B3000BBCF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A44EF9217F341B3000BBCF8 /* FastFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastFormTests.m; sourceTree = "<group>"; };
+		3A44EF9D17F341E8000BBCF8 /* FFTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFTableController.h; path = lib/FFTableController.h; sourceTree = "<group>"; };
+		3A44EF9E17F341E8000BBCF8 /* FFTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFTableController.m; path = lib/FFTableController.m; sourceTree = "<group>"; };
+		3A44EFA117F3428B000BBCF8 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginController.h; path = "example-usage/LoginController.h"; sourceTree = "<group>"; };
+		3A44EFA217F3428B000BBCF8 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginController.m; path = "example-usage/LoginController.m"; sourceTree = "<group>"; };
+		3A44EFA817F343AA000BBCF8 /* FFField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFField.h; path = lib/fields/FFField.h; sourceTree = "<group>"; };
+		3A44EFA917F343AA000BBCF8 /* FFField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFField.m; path = lib/fields/FFField.m; sourceTree = "<group>"; };
+		3A44EFAB17F343DC000BBCF8 /* FFCharField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFCharField.h; path = lib/fields/FFCharField.h; sourceTree = "<group>"; };
+		3A44EFAC17F343DC000BBCF8 /* FFCharField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFCharField.m; path = lib/fields/FFCharField.m; sourceTree = "<group>"; };
+		3A44EFAE17F34411000BBCF8 /* FFCharField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FFCharField.xib; path = lib/fields/FFCharField.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +121,8 @@
 		3A44EF7317F341B2000BBCF8 /* FastForm */ = {
 			isa = PBXGroup;
 			children = (
+				3A44EFA017F34219000BBCF8 /* example-usage */,
+				3A44EF9C17F341B9000BBCF8 /* lib */,
 				3A44EF7C17F341B3000BBCF8 /* AppDelegate.h */,
 				3A44EF7D17F341B3000BBCF8 /* AppDelegate.m */,
 				3A44EF7F17F341B3000BBCF8 /* Images.xcassets */,
@@ -142,6 +158,37 @@
 				3A44EF8F17F341B3000BBCF8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A44EF9C17F341B9000BBCF8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3A44EFA417F34302000BBCF8 /* fields */,
+				3A44EF9D17F341E8000BBCF8 /* FFTableController.h */,
+				3A44EF9E17F341E8000BBCF8 /* FFTableController.m */,
+				3A44EFA817F343AA000BBCF8 /* FFField.h */,
+				3A44EFA917F343AA000BBCF8 /* FFField.m */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		3A44EFA017F34219000BBCF8 /* example-usage */ = {
+			isa = PBXGroup;
+			children = (
+				3A44EFA117F3428B000BBCF8 /* LoginController.h */,
+				3A44EFA217F3428B000BBCF8 /* LoginController.m */,
+			);
+			name = "example-usage";
+			sourceTree = "<group>";
+		};
+		3A44EFA417F34302000BBCF8 /* fields */ = {
+			isa = PBXGroup;
+			children = (
+				3A44EFAB17F343DC000BBCF8 /* FFCharField.h */,
+				3A44EFAC17F343DC000BBCF8 /* FFCharField.m */,
+				3A44EFAE17F34411000BBCF8 /* FFCharField.xib */,
+			);
+			name = fields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +238,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Bravo Inovação";
 				TargetAttributes = {
+					3A44EF6917F341B2000BBCF8 = {
+						DevelopmentTeam = BZ86D978GD;
+					};
 					3A44EF8417F341B3000BBCF8 = {
 						TestTargetID = 3A44EF6917F341B2000BBCF8;
 					};
@@ -220,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A44EF7817F341B2000BBCF8 /* InfoPlist.strings in Resources */,
+				3A44EFAF17F34411000BBCF8 /* FFCharField.xib in Resources */,
 				3A44EF8017F341B3000BBCF8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A44EFAA17F343AA000BBCF8 /* FFField.m in Sources */,
+				3A44EF9F17F341E8000BBCF8 /* FFTableController.m in Sources */,
+				3A44EFAD17F343DC000BBCF8 /* FFCharField.m in Sources */,
+				3A44EFA317F3428B000BBCF8 /* LoginController.m in Sources */,
 				3A44EF7E17F341B3000BBCF8 /* AppDelegate.m in Sources */,
 				3A44EF7A17F341B3000BBCF8 /* main.m in Sources */,
 			);
@@ -315,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -348,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -359,10 +414,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FastForm/FastForm-Prefix.pch";
 				INFOPLIST_FILE = "FastForm/FastForm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -372,10 +430,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FastForm/FastForm-Prefix.pch";
 				INFOPLIST_FILE = "FastForm/FastForm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -441,6 +502,7 @@
 				3A44EF9817F341B3000BBCF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A44EF9917F341B3000BBCF8 /* Build configuration list for PBXNativeTarget "FastFormTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +511,7 @@
 				3A44EF9B17F341B3000BBCF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
