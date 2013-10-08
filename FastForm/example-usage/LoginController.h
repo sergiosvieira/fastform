@@ -8,12 +8,14 @@
 
 #import "FFTableController.h"
 
-#import "FFCharField.h"
-
+@class FFCharField, FFPhotoField;
 
 @interface LoginController : FFTableController
 
-@property (strong, nonatomic) FFCharField * name;
+@property (strong, nonatomic) FFPhotoField * photoField;
+@property (strong, nonatomic) FFCharField * firstName;
+@property (strong, nonatomic) FFCharField * lastName;
+@property (strong, nonatomic) FFCharField * email;
 @property (strong, nonatomic) FFCharField * password;
 
 @end

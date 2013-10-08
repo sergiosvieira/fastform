@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FFField : UITableViewCell
+@protocol FFFieldProtocol <NSObject>
+
+@required
+- (BOOL)areFieldFilled;
+
+@end
+
+@interface FFField : UITableViewCell <FFFieldProtocol>
 
 @property (assign, nonatomic) NSInteger section;
 @property (assign, nonatomic) NSInteger position;
+@property (assign, nonatomic) BOOL required;
 
 @end

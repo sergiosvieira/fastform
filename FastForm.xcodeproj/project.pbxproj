@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0E44D91804B12F00285BCA /* FFPhotoField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0E44D81804B12F00285BCA /* FFPhotoField.xib */; };
+		3A0E44DC1804B14600285BCA /* FFPhotoField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0E44DB1804B14600285BCA /* FFPhotoField.m */; };
+		3A0E44DE1804B41500285BCA /* default-profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A0E44DD1804B41500285BCA /* default-profile.jpg */; };
 		3A44EF6E17F341B2000BBCF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A44EF6D17F341B2000BBCF8 /* Foundation.framework */; };
 		3A44EF7017F341B2000BBCF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A44EF6F17F341B2000BBCF8 /* CoreGraphics.framework */; };
 		3A44EF7217F341B2000BBCF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A44EF7117F341B2000BBCF8 /* UIKit.framework */; };
@@ -37,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A0E44D81804B12F00285BCA /* FFPhotoField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FFPhotoField.xib; path = lib/fields/FFPhotoField.xib; sourceTree = "<group>"; };
+		3A0E44DA1804B14600285BCA /* FFPhotoField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFPhotoField.h; path = lib/fields/FFPhotoField.h; sourceTree = "<group>"; };
+		3A0E44DB1804B14600285BCA /* FFPhotoField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFPhotoField.m; path = lib/fields/FFPhotoField.m; sourceTree = "<group>"; };
+		3A0E44DD1804B41500285BCA /* default-profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "default-profile.jpg"; sourceTree = "<group>"; };
 		3A44EF6A17F341B2000BBCF8 /* FastForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A44EF6D17F341B2000BBCF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3A44EF6F17F341B2000BBCF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +133,7 @@
 				3A44EF7C17F341B3000BBCF8 /* AppDelegate.h */,
 				3A44EF7D17F341B3000BBCF8 /* AppDelegate.m */,
 				3A44EF7F17F341B3000BBCF8 /* Images.xcassets */,
+				3A0E44DD1804B41500285BCA /* default-profile.jpg */,
 				3A44EF7417F341B2000BBCF8 /* Supporting Files */,
 			);
 			path = FastForm;
@@ -187,6 +195,9 @@
 				3A44EFAB17F343DC000BBCF8 /* FFCharField.h */,
 				3A44EFAC17F343DC000BBCF8 /* FFCharField.m */,
 				3A44EFAE17F34411000BBCF8 /* FFCharField.xib */,
+				3A0E44DA1804B14600285BCA /* FFPhotoField.h */,
+				3A0E44DB1804B14600285BCA /* FFPhotoField.m */,
+				3A0E44D81804B12F00285BCA /* FFPhotoField.xib */,
 			);
 			name = fields;
 			sourceTree = "<group>";
@@ -272,6 +283,8 @@
 				3A44EF7817F341B2000BBCF8 /* InfoPlist.strings in Resources */,
 				3A44EFAF17F34411000BBCF8 /* FFCharField.xib in Resources */,
 				3A44EF8017F341B3000BBCF8 /* Images.xcassets in Resources */,
+				3A0E44DE1804B41500285BCA /* default-profile.jpg in Resources */,
+				3A0E44D91804B12F00285BCA /* FFPhotoField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A44EFAA17F343AA000BBCF8 /* FFField.m in Sources */,
+				3A0E44DC1804B14600285BCA /* FFPhotoField.m in Sources */,
 				3A44EF9F17F341E8000BBCF8 /* FFTableController.m in Sources */,
 				3A44EFAD17F343DC000BBCF8 /* FFCharField.m in Sources */,
 				3A44EFA317F3428B000BBCF8 /* LoginController.m in Sources */,

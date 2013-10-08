@@ -10,7 +10,7 @@
 
 @interface FFCharField : FFField
 
-@property (strong, nonatomic) IBOutlet UIImageView *iconImageView;
-@property (strong, nonatomic) IBOutlet UITextField *textField;
+@property (strong, nonatomic) IBOutlet UIImageView * iconImageView;
+@property (strong, nonatomic) IBOutlet UITextField * textField;
 
 @end

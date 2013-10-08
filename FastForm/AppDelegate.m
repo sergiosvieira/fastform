@@ -19,8 +19,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    self.window.rootViewController = [[LoginController alloc] initWithStyle:UITableViewStyleGrouped];
+    LoginController * login = [[LoginController alloc] initWithStyle:UITableViewStyleGrouped];
+    UINavigationController * navigation = [[UINavigationController alloc] initWithRootViewController:login];
     
+    self.window.rootViewController = navigation;
     [self.window makeKeyAndVisible];
     return YES;
 }

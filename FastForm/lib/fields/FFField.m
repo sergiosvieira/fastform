@@ -10,4 +10,27 @@
 
 @implementation FFField
 
+- (id)init
+{
+    self = [super init];
+    
+    if (self)
+    {
+        _required = YES;
+    }
+    
+    return self;
+}
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    _required = YES;
+}
+
+- (BOOL)areFieldFilled
+{
+    return YES;
+}
+
 @end
