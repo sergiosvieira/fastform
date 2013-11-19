@@ -11,6 +11,7 @@
 #import <objc/runtime.h>
 #import "FFField.h"
 #import "FFCharField.h"
+#import "FFFormatter.h"
 
 
 @interface FFTableController ()
@@ -24,7 +25,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    
     [self loadModel];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
 }
 
 - (void)loadModel
@@ -44,13 +57,17 @@
         
         FFField * object = [self valueForKey:varName];
         
-        if (object.section > [_model count] - 1)
+        if ([object isKindOfClass:[FFField class]])
         {
-            _model[object.section] = [[NSMutableArray alloc] init];
+            if (object.section > [_model count] - 1)
+            {
+                _model[object.section] = [[NSMutableArray alloc] init];
+            }
+            
+            NSMutableArray * rowArray = _model[object.section];
+            
+            [rowArray addObject:varName];
         }
-        
-        
-        [_model[object.section] addObject:varName];
     }
     
     free(ivars);
@@ -75,6 +92,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     FFField * cell = [self valueForKey:self.model[indexPath.section][indexPath.row]];
+
+    /** set value with formatter **/
+    cell.valueField = cell.formatter.formattedValue;
 
     return cell;
 }
@@ -118,6 +138,11 @@
     UINib * nib = [UINib nibWithNibName:cellName bundle:[NSBundle mainBundle]];
         
     return [nib instantiateWithOwner:self options:nil][0];
+}
+
+- (FFField *)fieldWithIndexPath:(NSIndexPath *)indexPath
+{
+    return [self valueForKey:self.model[indexPath.section][indexPath.row]];
 }
 
 @end

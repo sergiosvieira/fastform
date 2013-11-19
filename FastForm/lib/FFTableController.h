@@ -25,5 +25,6 @@
 
 - (FFField *)requiredFieldsAreFilled;
 - (id)instantiatingCellWithName:(NSString *)cellName;
+- (FFField *)fieldWithIndexPath:(NSIndexPath *)indexPath;
 
 @end

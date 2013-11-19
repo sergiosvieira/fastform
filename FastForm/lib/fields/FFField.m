@@ -2,7 +2,7 @@
 //  FFField.m
 //  FastForm
 //
-//  Created by Paulo Pinheiro on 9/25/13.
+//  Created by Sérgio Vieira on 9/25/13.
 //  Copyright (c) 2013 Bravo Inovação. All rights reserved.
 //
 
@@ -31,6 +31,22 @@
 - (BOOL)areFieldFilled
 {
     return YES;
+}
+
+- (id)valueField
+{
+    return nil;
+}
+
+- (void)setValueField:(id)value
+{
+}
+
+- (void)setFrame:(CGRect)frame
+{
+    frame.origin.x += self.horizontalInset;
+    frame.size.width -= 2 * self.horizontalInset;
+    [super setFrame:frame];
 }
 
 @end

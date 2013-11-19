@@ -15,4 +15,25 @@
     return [[self.textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0;
 }
 
+- (void)becomeResponder
+{
+    [self.textField becomeFirstResponder];
+}
+
+- (void)emailField:(BOOL)flag
+{
+    if (flag)
+    {
+        self.textField.autocorrectionType = UITextAutocorrectionTypeNo;
+        self.textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+        [self.textField setKeyboardType:UIKeyboardTypeEmailAddress];
+    }
+    else
+    {
+        self.textField.autocorrectionType = UITextAutocorrectionTypeDefault;
+        self.textField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+        [self.textField setKeyboardType:UIKeyboardTypeDefault];
+    }
+}
+
 @end
