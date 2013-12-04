@@ -46,7 +46,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage * image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    CGSize cropSize = CGSizeMake(280.f, 123.f);
+    CGSize cropSize = CGSizeMake(560.f, 246.f);
     
     _imgCropperViewController = [[UzysImageCropperViewController alloc] initWithImage:image andframeSize:picker.view.frame.size
         andcropSize:cropSize];
@@ -72,6 +72,7 @@
 - (void)imageCropper:(UzysImageCropperViewController *)cropper didFinishCroppingWithImage:(UIImage *)image
 {
     self.changedPhoto = YES;
+    self.selectedImage.image = image;
     [self.photoButton setBackgroundImage:image forState:UIControlStateNormal];
     [_controller dismissViewControllerAnimated:YES completion:nil];
 }
