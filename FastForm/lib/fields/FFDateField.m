@@ -58,6 +58,7 @@
     [self.tempTextField becomeFirstResponder];
 }
 
+#pragma mark - Public Methods
 - (void)setDatePickerMode:(UIDatePickerMode)mode
 {
     mode_ = mode;
@@ -74,6 +75,11 @@
     {
         self.datePicker.textDescription = [Messages chooseOne];
     }
+}
+
+- (void)setDate:(NSDate *)date
+{
+    [self.datePicker setDate:date];
 }
 
 @end
