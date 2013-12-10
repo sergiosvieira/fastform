@@ -72,7 +72,7 @@
 - (void)imageCropper:(UzysImageCropperViewController *)cropper didFinishCroppingWithImage:(UIImage *)image
 {
     self.changedPhoto = YES;
-    self.selectedImage.image = image;
+    self.selectedImage = image;
     [self.photoButton setBackgroundImage:image forState:UIControlStateNormal];
     [_controller dismissViewControllerAnimated:YES completion:nil];
 }
@@ -80,6 +80,7 @@
 - (void)imageCropperDidCancel:(UzysImageCropperViewController *)cropper
 {
     [cropper.imagePicker dismissViewControllerAnimated:YES completion:nil];
+    self.selectedImage = nil;
     self.changedPhoto = NO;
 }
 

@@ -9,8 +9,10 @@
 #import "FFProfileField.h"
 
 #import "DownloadOperation.h"
+
 #import "ProfileCoreDataAdapter.h"
 
+#import "FXManager.h"
 
 @interface FFProfileField () <DownloadProtocol>
 
@@ -111,15 +113,26 @@
             }
             else
             {
-                [WCCoreApp imageWithBlur:theImage cropRect:kProfileBackgroundRect blurRect:kProfileBackgroundBlurRect withBlock:^(UIImage * blurImage) {
-                    dispatch_async(dispatch_get_main_queue(), ^{
+                [FXManager blur:theImage withBlock:^(UIImage * blurImage) {
+                    if (blurImage)
+                    {
                         SDWebImageManager * manager = [SDWebImageManager sharedManager];
                         NSString * key = [NSString stringWithFormat:@"%@-half-blur", theURL];
                         
                         [manager.imageCache storeImage:blurImage forKey:key];
+                        
                         [self.backgroundImageView setImage:blurImage];
-                    });
+                    }
                 }];
+//                [WCCoreApp imageWithBlur:theImage cropRect:kProfileBackgroundRect blurRect:kProfileBackgroundBlurRect withBlock:^(UIImage * blurImage) {
+//                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        SDWebImageManager * manager = [SDWebImageManager sharedManager];
+//                        NSString * key = [NSString stringWithFormat:@"%@-half-blur", theURL];
+//                        
+//                        [manager.imageCache storeImage:blurImage forKey:key];
+//                        [self.backgroundImageView setImage:blurImage];
+//                    });
+//                }];
             }
             
             [self.profileDownloadRequests removeObjectForKey:theURL];
