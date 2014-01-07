@@ -58,6 +58,7 @@
     [self.tempTextField becomeFirstResponder];
 }
 
+#pragma mark - Public Methods
 - (void)setDatePickerMode:(UIDatePickerMode)mode
 {
     mode_ = mode;

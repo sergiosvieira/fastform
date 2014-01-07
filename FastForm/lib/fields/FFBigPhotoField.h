@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 
 @property (weak, nonatomic) UIViewController * controller;
+@property (strong, nonatomic) UIImage * selectedImage;
 
 - (IBAction)changePhoto:(UIButton *)sender;
 - (void)setImageOnButton:(UIImage *)image;
