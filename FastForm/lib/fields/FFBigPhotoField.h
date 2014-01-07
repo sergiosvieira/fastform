@@ -17,5 +17,6 @@
 @property (weak, nonatomic) UIViewController * controller;
 
 - (IBAction)changePhoto:(UIButton *)sender;
+- (void)setImageOnButton:(UIImage *)image;
 
 @end

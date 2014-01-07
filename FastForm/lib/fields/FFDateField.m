@@ -76,4 +76,9 @@
     }
 }
 
+- (void)setDate:(NSDate *)date
+{
+    [self.datePicker setDate:date];
+}
+
 @end

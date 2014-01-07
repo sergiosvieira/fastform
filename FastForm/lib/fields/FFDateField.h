@@ -11,6 +11,7 @@
 @interface FFDateField : FFButtonValue
 
 - (void)setDatePickerMode:(UIDatePickerMode)mode;
+- (void)setDate:(NSDate *)date;
 
 @property (strong, nonatomic) IBOutlet UIImageView *iconImageView;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;

@@ -42,6 +42,13 @@
 {
 }
 
+#pragma mark - Public Methods
+- (void)setImageOnButton:(UIImage *)image
+{
+    [self.photoButton setBackgroundImage:image forState:UIControlStateNormal];
+    self.changedPhoto = YES;
+}
+
 #pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
