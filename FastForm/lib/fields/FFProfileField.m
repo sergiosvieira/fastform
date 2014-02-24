@@ -16,17 +16,17 @@
 
 @interface FFProfileField () <DownloadProtocol>
 
-@property (strong, nonatomic) NSMutableDictionary * profileDownloadRequests;
+@property (strong, nonatomic) NSCache * profileDownloadRequests;
 
 @end
 
 @implementation FFProfileField
 
-- (NSMutableDictionary *)profileDownloadRequests
+- (NSCache *)profileDownloadRequests
 {
     if (!_profileDownloadRequests)
     {
-        _profileDownloadRequests = [[NSMutableDictionary alloc] init];
+        _profileDownloadRequests = [[NSCache alloc] init];
     }
     
     return _profileDownloadRequests;
@@ -60,13 +60,13 @@
     
     if (!image)
     {
-        DownloadOperation * downloadOperation = self.profileDownloadRequests[url.absoluteString];
+        DownloadOperation * downloadOperation = [self.profileDownloadRequests objectForKey:url.absoluteString];
         
         if (!downloadOperation)
         {
             downloadOperation = [[DownloadOperation alloc] initWithUrl:url withSize:CGSizeMake(156.f, 156.f)];
             downloadOperation.delegate = self;
-            self.profileDownloadRequests[url.absoluteString] = downloadOperation;
+            [self.profileDownloadRequests setObject:downloadOperation forKey:url.absoluteString];
             [downloadOperation start];
         }
     }
@@ -83,13 +83,13 @@
     
     if (!image)
     {
-        DownloadOperation * downloadOperation = self.profileDownloadRequests[url.absoluteString];
+        DownloadOperation * downloadOperation = [self.profileDownloadRequests objectForKey:url.absoluteString];
         
         if (!downloadOperation)
         {
             downloadOperation = [[DownloadOperation alloc] initWithUrl:url withSize:kProfileBackgroundRect.size];
             downloadOperation.delegate = self;
-            self.profileDownloadRequests[url.absoluteString] = downloadOperation;
+            [self.profileDownloadRequests setObject:downloadOperation forKey:url.absoluteString];
             [downloadOperation start];
         }
     }
@@ -103,7 +103,7 @@
 {
     if (!error)
     {
-        if (self.profileDownloadRequests[theURL])
+        if ([self.profileDownloadRequests objectForKey:theURL])
         {
             NSRange range = [theURL rangeOfString:kProfilePhoto];
             
