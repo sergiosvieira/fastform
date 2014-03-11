@@ -12,6 +12,7 @@
 
 @required
 @property (strong, nonatomic) id raw;
+@property (assign, nonatomic) NSInteger selectedIndex;
 - (NSString *)formattedValue;
 
 @end

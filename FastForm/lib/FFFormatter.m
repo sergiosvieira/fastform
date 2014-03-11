@@ -11,6 +11,7 @@
 @implementation FFFormatter
 {
     NSString * raw_;
+    NSInteger selectedIndex_;
 }
 
 - (id)raw
@@ -26,6 +27,16 @@
 - (NSString *)formattedValue
 {
     return raw_;
+}
+
+- (void)setSelectedIndex:(NSInteger)index
+{
+    selectedIndex_ = index;
+}
+
+- (NSInteger)selectedIndex
+{
+    return selectedIndex_;
 }
 
 @end

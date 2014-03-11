@@ -47,6 +47,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     selectedValue_ = self.dataSource[row];
+    self.formatter.selectedIndex = row;
     self.formatter.raw = self.dataSource[row];
     self.titleLabel.hidden = YES;
     self.valueLabel.hidden = NO;    
