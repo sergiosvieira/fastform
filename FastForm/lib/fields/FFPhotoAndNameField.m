@@ -17,6 +17,10 @@
 {
     [super awakeFromNib];
     
+    UIColor * color = [UIColor colorWithRed:0.937 green:0.937 blue:0.957 alpha:1.0];
+    
+    [self.photoButton.layer setBorderColor:[color CGColor]];
+    [self.photoButton.layer setBorderWidth:1.f];
     [self.photoButton addTarget:self action:@selector(choosePhoto:) forControlEvents:UIControlEventTouchUpInside];
 }
 

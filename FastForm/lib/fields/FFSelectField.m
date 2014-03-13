@@ -96,7 +96,7 @@
 {
     if (!_picker)
     {
-        _picker = [[UIPickerView alloc] init];
+        _picker = [[UIPickerView alloc] initWithFrame:CGRectMake(0.f, 40.f, 320.f, 226.f)];
         _picker.delegate = self;
         _picker.showsSelectionIndicator = YES;
     }
